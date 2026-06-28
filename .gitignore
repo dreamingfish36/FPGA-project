@@ -1,0 +1,32 @@
+**/.Xil/
+**/.cache/
+**/.runs/
+*.log
+*.vcd
+node_modules/
+.DS_Store
+# 屏蔽所有 Vivado 项目缓存目录
+**/.Xil/
+**/.cache/
+**/.runs/
+**/.sim/
+**/.hw/
+**/.ip_user_files/
+**/.gen/
+
+# 屏蔽仿真临时文件
+*.vcd
+*.wdb
+*.whd
+*.log
+*.jou
+*.str
+
+# 屏蔽编译中间文件
+*.o
+*.so
+*.a
+# 屏蔽 Vivado SDK 工程缓存
+**/.sdk/
+**/.metadata_broken_*/
+**/.plugins/

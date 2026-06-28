@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="ps_uart_bram_hdmi_axi_smc_0_synth_1" LaunchDir="D:/Github/FPGA-course/zynq7020-image-processing/sobel_05_pc_control_display/sobel_05_pc_control_display.runs/ps_uart_bram_hdmi_axi_smc_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="synth_1" LaunchDir="D:/Github/FPGA-course/zynq7020-image-processing/sobel_05_pc_control_display/sobel_05_pc_control_display.runs/synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado">
+		<Parent Id="ps_uart_bram_hdmi_axi_smc_0_synth_1"/>
+	</Run>
+</Runs>
+

@@ -1,0 +1,553 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Thu Jun  4 08:56:57 2026
+# Process ID: 20716
+# Current directory: D:/Github/FPGA-course/sobel/sobel_02_hdmi_sobel/sobel_02_hdmi_sobel.runs/synth_1
+# Command line: vivado.exe -log top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top.tcl
+# Log file: D:/Github/FPGA-course/sobel/sobel_02_hdmi_sobel/sobel_02_hdmi_sobel.runs/synth_1/top.vds
+# Journal file: D:/Github/FPGA-course/sobel/sobel_02_hdmi_sobel/sobel_02_hdmi_sobel.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source top.tcl -notrace
+Command: synth_design -top top -part xc7z020clg400-2
+Starting synth_design
+INFO: [IP_Flow 19-2162] IP 'rgb2dvi_0' is locked:
+* IP definition 'rgb2dvi (1.3)' for IP 'rgb2dvi_0' (customized with software release 2017.4) was not found in the IP Catalog.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 10988 
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module rgb_to_gray [D:/Github/FPGA-course/sobel/sobel_02_hdmi_sobel/sobel_02_hdmi_sobel.srcs/sources_1/new/rgb_to_gray.v:3]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module sobel_core [D:/Github/FPGA-course/sobel/sobel_02_hdmi_sobel/sobel_02_hdmi_sobel.srcs/sources_1/new/sobel_core.v:3]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 419.062 ; gain = 114.809
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'top' [D:/Github/FPGA-course/sobel/sobel_02_hdmi_sobel/sobel_02_hdmi_sobel.srcs/sources_1/new/top.v:6]
+INFO: [Synth 8-638] synthesizing module 'hdmi_sobel_display' [D:/Github/FPGA-course/sobel/sobel_02_hdmi_sobel/sobel_02_hdmi_sobel.srcs/sources_1/new/hdmi_sobel_display.v:3]
+	Parameter H_ACTIVE bound to: 16'b0000010100000000 
+	Parameter H_FP bound to: 16'b0000000001101110 
+	Parameter H_SYNC bound to: 16'b0000000000101000 
+	Parameter H_BP bound to: 16'b0000000011011100 
+	Parameter V_ACTIVE bound to: 16'b0000001011010000 
+	Parameter V_FP bound to: 16'b0000000000000101 
+	Parameter V_SYNC bound to: 16'b0000000000000101 
+	Parameter V_BP bound to: 16'b0000000000010100 
+	Parameter H_TOTAL bound to: 16'b0000011001110010 
+	Parameter V_TOTAL bound to: 16'b0000001011101110 
+	Parameter H_START bound to: 16'b0000000101110010 
+	Parameter V_START bound to: 16'b0000000000011110 
+	Parameter IMG_WIDTH bound to: 128 - type: integer 
+	Parameter IMG_HEIGHT bound to: 72 - type: integer 
+	Parameter SCALE_X bound to: 10 - type: integer 
+	Parameter SCALE_Y bound to: 10 - type: integer 
+	Parameter ST_IDLE bound to: 2'b00 
+	Parameter ST_RUN bound to: 2'b01 
+	Parameter ST_WAIT bound to: 2'b10 
+	Parameter ST_DISPLAY bound to: 2'b11 
+INFO: [Synth 8-5534] Detected attribute (* ram_style = "block" *) [D:/Github/FPGA-course/sobel/sobel_02_hdmi_sobel/sobel_02_hdmi_sobel.srcs/sources_1/new/hdmi_sobel_display.v:61]
+INFO: [Synth 8-638] synthesizing module 'image_rom_128x72' [D:/Github/FPGA-course/sobel/sobel_02_hdmi_sobel/sobel_02_hdmi_sobel.srcs/sources_1/new/image_rom_128x72.v:1]
+INFO: [Synth 8-5534] Detected attribute (* ram_style = "block" *) [D:/Github/FPGA-course/sobel/sobel_02_hdmi_sobel/sobel_02_hdmi_sobel.srcs/sources_1/new/image_rom_128x72.v:7]
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "block" *) [D:/Github/FPGA-course/sobel/sobel_02_hdmi_sobel/sobel_02_hdmi_sobel.srcs/sources_1/new/image_rom_128x72.v:7]
+INFO: [Synth 8-256] done synthesizing module 'image_rom_128x72' (1#1) [D:/Github/FPGA-course/sobel/sobel_02_hdmi_sobel/sobel_02_hdmi_sobel.srcs/sources_1/new/image_rom_128x72.v:1]
+INFO: [Synth 8-638] synthesizing module 'rgb_to_gray' [D:/Github/FPGA-course/sobel/sobel_02_hdmi_sobel/sobel_02_hdmi_sobel.srcs/sources_1/new/rgb_to_gray.v:3]
+INFO: [Synth 8-256] done synthesizing module 'rgb_to_gray' (2#1) [D:/Github/FPGA-course/sobel/sobel_02_hdmi_sobel/sobel_02_hdmi_sobel.srcs/sources_1/new/rgb_to_gray.v:3]
+INFO: [Synth 8-638] synthesizing module 'sobel_core' [D:/Github/FPGA-course/sobel/sobel_02_hdmi_sobel/sobel_02_hdmi_sobel.srcs/sources_1/new/sobel_core.v:3]
+	Parameter WIDTH bound to: 128 - type: integer 
+	Parameter HEIGHT bound to: 72 - type: integer 
+WARNING: [Synth 8-6014] Unused sequential element top2_reg was removed.  [D:/Github/FPGA-course/sobel/sobel_02_hdmi_sobel/sobel_02_hdmi_sobel.srcs/sources_1/new/sobel_core.v:59]
+WARNING: [Synth 8-6014] Unused sequential element mid2_reg was removed.  [D:/Github/FPGA-course/sobel/sobel_02_hdmi_sobel/sobel_02_hdmi_sobel.srcs/sources_1/new/sobel_core.v:62]
+WARNING: [Synth 8-6014] Unused sequential element bot2_reg was removed.  [D:/Github/FPGA-course/sobel/sobel_02_hdmi_sobel/sobel_02_hdmi_sobel.srcs/sources_1/new/sobel_core.v:65]
+WARNING: [Synth 8-6014] Unused sequential element prev2_pixel_reg was removed.  [D:/Github/FPGA-course/sobel/sobel_02_hdmi_sobel/sobel_02_hdmi_sobel.srcs/sources_1/new/sobel_core.v:66]
+WARNING: [Synth 8-6014] Unused sequential element prev1_pixel_reg was removed.  [D:/Github/FPGA-course/sobel/sobel_02_hdmi_sobel/sobel_02_hdmi_sobel.srcs/sources_1/new/sobel_core.v:67]
+WARNING: [Synth 8-6014] Unused sequential element gx_reg was removed.  [D:/Github/FPGA-course/sobel/sobel_02_hdmi_sobel/sobel_02_hdmi_sobel.srcs/sources_1/new/sobel_core.v:68]
+WARNING: [Synth 8-6014] Unused sequential element gy_reg was removed.  [D:/Github/FPGA-course/sobel/sobel_02_hdmi_sobel/sobel_02_hdmi_sobel.srcs/sources_1/new/sobel_core.v:69]
+WARNING: [Synth 8-6014] Unused sequential element abs_gx_reg was removed.  [D:/Github/FPGA-course/sobel/sobel_02_hdmi_sobel/sobel_02_hdmi_sobel.srcs/sources_1/new/sobel_core.v:70]
+WARNING: [Synth 8-6014] Unused sequential element abs_gy_reg was removed.  [D:/Github/FPGA-course/sobel/sobel_02_hdmi_sobel/sobel_02_hdmi_sobel.srcs/sources_1/new/sobel_core.v:71]
+WARNING: [Synth 8-6014] Unused sequential element mag_reg was removed.  [D:/Github/FPGA-course/sobel/sobel_02_hdmi_sobel/sobel_02_hdmi_sobel.srcs/sources_1/new/sobel_core.v:72]
+WARNING: [Synth 8-6014] Unused sequential element out_x_reg was removed.  [D:/Github/FPGA-course/sobel/sobel_02_hdmi_sobel/sobel_02_hdmi_sobel.srcs/sources_1/new/sobel_core.v:73]
+WARNING: [Synth 8-6014] Unused sequential element out_y_reg was removed.  [D:/Github/FPGA-course/sobel/sobel_02_hdmi_sobel/sobel_02_hdmi_sobel.srcs/sources_1/new/sobel_core.v:74]
+INFO: [Synth 8-256] done synthesizing module 'sobel_core' (3#1) [D:/Github/FPGA-course/sobel/sobel_02_hdmi_sobel/sobel_02_hdmi_sobel.srcs/sources_1/new/sobel_core.v:3]
+INFO: [Synth 8-226] default block is never used [D:/Github/FPGA-course/sobel/sobel_02_hdmi_sobel/sobel_02_hdmi_sobel.srcs/sources_1/new/hdmi_sobel_display.v:222]
+INFO: [Synth 8-256] done synthesizing module 'hdmi_sobel_display' (4#1) [D:/Github/FPGA-course/sobel/sobel_02_hdmi_sobel/sobel_02_hdmi_sobel.srcs/sources_1/new/hdmi_sobel_display.v:3]
+INFO: [Synth 8-638] synthesizing module 'video_clock' [D:/Github/FPGA-course/sobel/sobel_02_hdmi_sobel/sobel_02_hdmi_sobel.runs/synth_1/.Xil/Vivado-20716-LAPTOP-OBFF2D66/realtime/video_clock_stub.v:5]
+INFO: [Synth 8-256] done synthesizing module 'video_clock' (5#1) [D:/Github/FPGA-course/sobel/sobel_02_hdmi_sobel/sobel_02_hdmi_sobel.runs/synth_1/.Xil/Vivado-20716-LAPTOP-OBFF2D66/realtime/video_clock_stub.v:5]
+INFO: [Synth 8-638] synthesizing module 'rgb2dvi_0' [D:/Github/FPGA-course/sobel/sobel_02_hdmi_sobel/sobel_02_hdmi_sobel.runs/synth_1/.Xil/Vivado-20716-LAPTOP-OBFF2D66/realtime/rgb2dvi_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'rgb2dvi_0' (6#1) [D:/Github/FPGA-course/sobel/sobel_02_hdmi_sobel/sobel_02_hdmi_sobel.runs/synth_1/.Xil/Vivado-20716-LAPTOP-OBFF2D66/realtime/rgb2dvi_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'top' (7#1) [D:/Github/FPGA-course/sobel/sobel_02_hdmi_sobel/sobel_02_hdmi_sobel.srcs/sources_1/new/top.v:6]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 490.840 ; gain = 186.586
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 490.840 ; gain = 186.586
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z020clg400-2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [D:/Github/FPGA-course/sobel/sobel_02_hdmi_sobel/sobel_02_hdmi_sobel.runs/synth_1/.Xil/Vivado-20716-LAPTOP-OBFF2D66/dcp2/rgb2dvi_0_in_context.xdc] for cell 'rgb2dvi_m0'
+Finished Parsing XDC File [D:/Github/FPGA-course/sobel/sobel_02_hdmi_sobel/sobel_02_hdmi_sobel.runs/synth_1/.Xil/Vivado-20716-LAPTOP-OBFF2D66/dcp2/rgb2dvi_0_in_context.xdc] for cell 'rgb2dvi_m0'
+Parsing XDC File [D:/Github/FPGA-course/sobel/sobel_02_hdmi_sobel/sobel_02_hdmi_sobel.runs/synth_1/.Xil/Vivado-20716-LAPTOP-OBFF2D66/dcp3/video_clock_in_context.xdc] for cell 'video_clock_m0'
+Finished Parsing XDC File [D:/Github/FPGA-course/sobel/sobel_02_hdmi_sobel/sobel_02_hdmi_sobel.runs/synth_1/.Xil/Vivado-20716-LAPTOP-OBFF2D66/dcp3/video_clock_in_context.xdc] for cell 'video_clock_m0'
+Parsing XDC File [D:/Github/FPGA-course/sobel/sobel_02_hdmi_sobel/sobel_02_hdmi_sobel.srcs/constrs_1/new/hdmi_out_test.xdc]
+WARNING: [Constraints 18-619] A clock with name 'sys_clk' already exists, overwriting the previous clock with the same name. [D:/Github/FPGA-course/sobel/sobel_02_hdmi_sobel/sobel_02_hdmi_sobel.srcs/constrs_1/new/hdmi_out_test.xdc:3]
+Finished Parsing XDC File [D:/Github/FPGA-course/sobel/sobel_02_hdmi_sobel/sobel_02_hdmi_sobel.srcs/constrs_1/new/hdmi_out_test.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/Github/FPGA-course/sobel/sobel_02_hdmi_sobel/sobel_02_hdmi_sobel.srcs/constrs_1/new/hdmi_out_test.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 860.324 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 860.324 ; gain = 556.070
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-2
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 860.324 ; gain = 556.070
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for TMDS_clk_n. (constraint file  D:/Github/FPGA-course/sobel/sobel_02_hdmi_sobel/sobel_02_hdmi_sobel.runs/synth_1/.Xil/Vivado-20716-LAPTOP-OBFF2D66/dcp2/rgb2dvi_0_in_context.xdc, line 2).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for TMDS_clk_n. (constraint file  D:/Github/FPGA-course/sobel/sobel_02_hdmi_sobel/sobel_02_hdmi_sobel.runs/synth_1/.Xil/Vivado-20716-LAPTOP-OBFF2D66/dcp2/rgb2dvi_0_in_context.xdc, line 3).
+Applied set_property IO_BUFFER_TYPE = NONE for TMDS_clk_p. (constraint file  D:/Github/FPGA-course/sobel/sobel_02_hdmi_sobel/sobel_02_hdmi_sobel.runs/synth_1/.Xil/Vivado-20716-LAPTOP-OBFF2D66/dcp2/rgb2dvi_0_in_context.xdc, line 4).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for TMDS_clk_p. (constraint file  D:/Github/FPGA-course/sobel/sobel_02_hdmi_sobel/sobel_02_hdmi_sobel.runs/synth_1/.Xil/Vivado-20716-LAPTOP-OBFF2D66/dcp2/rgb2dvi_0_in_context.xdc, line 5).
+Applied set_property IO_BUFFER_TYPE = NONE for TMDS_data_n[0]. (constraint file  D:/Github/FPGA-course/sobel/sobel_02_hdmi_sobel/sobel_02_hdmi_sobel.runs/synth_1/.Xil/Vivado-20716-LAPTOP-OBFF2D66/dcp2/rgb2dvi_0_in_context.xdc, line 6).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for TMDS_data_n[0]. (constraint file  D:/Github/FPGA-course/sobel/sobel_02_hdmi_sobel/sobel_02_hdmi_sobel.runs/synth_1/.Xil/Vivado-20716-LAPTOP-OBFF2D66/dcp2/rgb2dvi_0_in_context.xdc, line 7).
+Applied set_property IO_BUFFER_TYPE = NONE for TMDS_data_n[1]. (constraint file  D:/Github/FPGA-course/sobel/sobel_02_hdmi_sobel/sobel_02_hdmi_sobel.runs/synth_1/.Xil/Vivado-20716-LAPTOP-OBFF2D66/dcp2/rgb2dvi_0_in_context.xdc, line 8).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for TMDS_data_n[1]. (constraint file  D:/Github/FPGA-course/sobel/sobel_02_hdmi_sobel/sobel_02_hdmi_sobel.runs/synth_1/.Xil/Vivado-20716-LAPTOP-OBFF2D66/dcp2/rgb2dvi_0_in_context.xdc, line 9).
+Applied set_property IO_BUFFER_TYPE = NONE for TMDS_data_n[2]. (constraint file  D:/Github/FPGA-course/sobel/sobel_02_hdmi_sobel/sobel_02_hdmi_sobel.runs/synth_1/.Xil/Vivado-20716-LAPTOP-OBFF2D66/dcp2/rgb2dvi_0_in_context.xdc, line 10).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for TMDS_data_n[2]. (constraint file  D:/Github/FPGA-course/sobel/sobel_02_hdmi_sobel/sobel_02_hdmi_sobel.runs/synth_1/.Xil/Vivado-20716-LAPTOP-OBFF2D66/dcp2/rgb2dvi_0_in_context.xdc, line 11).
+Applied set_property IO_BUFFER_TYPE = NONE for TMDS_data_p[0]. (constraint file  D:/Github/FPGA-course/sobel/sobel_02_hdmi_sobel/sobel_02_hdmi_sobel.runs/synth_1/.Xil/Vivado-20716-LAPTOP-OBFF2D66/dcp2/rgb2dvi_0_in_context.xdc, line 12).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for TMDS_data_p[0]. (constraint file  D:/Github/FPGA-course/sobel/sobel_02_hdmi_sobel/sobel_02_hdmi_sobel.runs/synth_1/.Xil/Vivado-20716-LAPTOP-OBFF2D66/dcp2/rgb2dvi_0_in_context.xdc, line 13).
+Applied set_property IO_BUFFER_TYPE = NONE for TMDS_data_p[1]. (constraint file  D:/Github/FPGA-course/sobel/sobel_02_hdmi_sobel/sobel_02_hdmi_sobel.runs/synth_1/.Xil/Vivado-20716-LAPTOP-OBFF2D66/dcp2/rgb2dvi_0_in_context.xdc, line 14).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for TMDS_data_p[1]. (constraint file  D:/Github/FPGA-course/sobel/sobel_02_hdmi_sobel/sobel_02_hdmi_sobel.runs/synth_1/.Xil/Vivado-20716-LAPTOP-OBFF2D66/dcp2/rgb2dvi_0_in_context.xdc, line 15).
+Applied set_property IO_BUFFER_TYPE = NONE for TMDS_data_p[2]. (constraint file  D:/Github/FPGA-course/sobel/sobel_02_hdmi_sobel/sobel_02_hdmi_sobel.runs/synth_1/.Xil/Vivado-20716-LAPTOP-OBFF2D66/dcp2/rgb2dvi_0_in_context.xdc, line 16).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for TMDS_data_p[2]. (constraint file  D:/Github/FPGA-course/sobel/sobel_02_hdmi_sobel/sobel_02_hdmi_sobel.runs/synth_1/.Xil/Vivado-20716-LAPTOP-OBFF2D66/dcp2/rgb2dvi_0_in_context.xdc, line 17).
+Applied set_property IO_BUFFER_TYPE = NONE for sys_clk. (constraint file  D:/Github/FPGA-course/sobel/sobel_02_hdmi_sobel/sobel_02_hdmi_sobel.runs/synth_1/.Xil/Vivado-20716-LAPTOP-OBFF2D66/dcp3/video_clock_in_context.xdc, line 4).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for sys_clk. (constraint file  D:/Github/FPGA-course/sobel/sobel_02_hdmi_sobel/sobel_02_hdmi_sobel.runs/synth_1/.Xil/Vivado-20716-LAPTOP-OBFF2D66/dcp3/video_clock_in_context.xdc, line 5).
+Applied set_property DONT_TOUCH = true for rgb2dvi_m0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for video_clock_m0. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 860.324 ; gain = 556.070
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5547] Trying to map ROM "image_mem" into Block RAM due to explicit "ram_style" or "rom_style" specification
+WARNING: [Synth 8-6014] Unused sequential element data_reg was removed.  [D:/Github/FPGA-course/sobel/sobel_02_hdmi_sobel/sobel_02_hdmi_sobel.srcs/sources_1/new/image_rom_128x72.v:9229]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/Github/FPGA-course/sobel/sobel_02_hdmi_sobel/sobel_02_hdmi_sobel.srcs/sources_1/new/sobel_core.v:161]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/Github/FPGA-course/sobel/sobel_02_hdmi_sobel/sobel_02_hdmi_sobel.srcs/sources_1/new/sobel_core.v:160]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [D:/Github/FPGA-course/sobel/sobel_02_hdmi_sobel/sobel_02_hdmi_sobel.srcs/sources_1/new/sobel_core.v:160]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [D:/Github/FPGA-course/sobel/sobel_02_hdmi_sobel/sobel_02_hdmi_sobel.srcs/sources_1/new/sobel_core.v:161]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [D:/Github/FPGA-course/sobel/sobel_02_hdmi_sobel/sobel_02_hdmi_sobel.srcs/sources_1/new/sobel_core.v:160]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [D:/Github/FPGA-course/sobel/sobel_02_hdmi_sobel/sobel_02_hdmi_sobel.srcs/sources_1/new/sobel_core.v:161]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [D:/Github/FPGA-course/sobel/sobel_02_hdmi_sobel/sobel_02_hdmi_sobel.srcs/sources_1/new/sobel_core.v:160]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [D:/Github/FPGA-course/sobel/sobel_02_hdmi_sobel/sobel_02_hdmi_sobel.srcs/sources_1/new/sobel_core.v:161]
+INFO: [Synth 8-5546] ROM "edge_frame_done" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "flush_bottom_row" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "v_cnt" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "src_y" won't be mapped to RAM because it is too sparse
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 860.324 ; gain = 556.070
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+------------------------+------------+----------+
+|      |RTL Partition           |Replication |Instances |
++------+------------------------+------------+----------+
+|1     |sobel_core__GB0         |           1|     23093|
+|2     |sobel_core__GB1         |           1|     18898|
+|3     |sobel_core__GB2         |           1|     10576|
+|4     |hdmi_sobel_display__GC0 |           1|      1575|
+|5     |top__GC0                |           1|        13|
++------+------------------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     16 Bit       Adders := 4     
+	   2 Input     14 Bit       Adders := 3     
+	   2 Input     13 Bit       Adders := 1     
+	   7 Input     12 Bit       Adders := 2     
+	   2 Input     12 Bit       Adders := 6     
+	   2 Input      7 Bit       Adders := 2     
++---Registers : 
+	               24 Bit    Registers := 1     
+	               16 Bit    Registers := 6     
+	               14 Bit    Registers := 1     
+	               12 Bit    Registers := 2     
+	                8 Bit    Registers := 265   
+	                7 Bit    Registers := 6     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 15    
++---RAMs : 
+	              72K Bit         RAMs := 1     
++---ROMs : 
+	                              ROMs := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 16    
+	   2 Input     14 Bit        Muxes := 2     
+	   2 Input     12 Bit        Muxes := 4     
+	   2 Input      8 Bit        Muxes := 300   
+	   4 Input      7 Bit        Muxes := 2     
+	   2 Input      7 Bit        Muxes := 2     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 288   
+	   4 Input      1 Bit        Muxes := 6     
+	   3 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module sobel_core 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     16 Bit       Adders := 4     
+	   2 Input     13 Bit       Adders := 1     
+	   7 Input     12 Bit       Adders := 2     
+	   2 Input     12 Bit       Adders := 2     
++---Registers : 
+	               16 Bit    Registers := 4     
+	                8 Bit    Registers := 263   
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 16    
+	   2 Input     12 Bit        Muxes := 2     
+	   2 Input      8 Bit        Muxes := 300   
+	   2 Input      1 Bit        Muxes := 287   
+Module image_rom_128x72 
+Detailed RTL Component Info : 
++---Registers : 
+	               24 Bit    Registers := 1     
++---ROMs : 
+	                              ROMs := 1     
+Module rgb_to_gray 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 2     
+	                8 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
+Module hdmi_sobel_display 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     14 Bit       Adders := 3     
+	   2 Input     12 Bit       Adders := 4     
+	   2 Input      7 Bit       Adders := 2     
++---Registers : 
+	               14 Bit    Registers := 1     
+	               12 Bit    Registers := 2     
+	                8 Bit    Registers := 1     
+	                7 Bit    Registers := 6     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 10    
++---RAMs : 
+	              72K Bit         RAMs := 1     
++---Muxes : 
+	   2 Input     14 Bit        Muxes := 2     
+	   2 Input     12 Bit        Muxes := 2     
+	   4 Input      7 Bit        Muxes := 2     
+	   2 Input      7 Bit        Muxes := 2     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 6     
+	   3 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [D:/Github/FPGA-course/sobel/sobel_02_hdmi_sobel/sobel_02_hdmi_sobel.srcs/sources_1/new/sobel_core.v:161]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [D:/Github/FPGA-course/sobel/sobel_02_hdmi_sobel/sobel_02_hdmi_sobel.srcs/sources_1/new/sobel_core.v:160]
+INFO: [Synth 8-5546] ROM "flush_bottom_row" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "edge_frame_done" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "v_cnt" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-4652] Swapped enable and write-enable on 4 RAM instances of RAM edge_mem_reg to conserve power
+INFO: [Synth 8-3886] merging instance 'hdmi_sobel_display_m0i_3/u_rgb_to_gray/gray_y_reg[7]' (FDC) to 'hdmi_sobel_display_m0i_3/u_rgb_to_gray/gray_x_reg[15]'
+INFO: [Synth 8-3886] merging instance 'hdmi_sobel_display_m0i_3/u_rgb_to_gray/gray_y_reg[8]' (FDC) to 'hdmi_sobel_display_m0i_3/u_rgb_to_gray/gray_x_reg[15]'
+INFO: [Synth 8-3886] merging instance 'hdmi_sobel_display_m0i_3/u_rgb_to_gray/gray_y_reg[9]' (FDC) to 'hdmi_sobel_display_m0i_3/u_rgb_to_gray/gray_x_reg[15]'
+INFO: [Synth 8-3886] merging instance 'hdmi_sobel_display_m0i_3/u_rgb_to_gray/gray_y_reg[10]' (FDC) to 'hdmi_sobel_display_m0i_3/u_rgb_to_gray/gray_x_reg[15]'
+INFO: [Synth 8-3886] merging instance 'hdmi_sobel_display_m0i_3/u_rgb_to_gray/gray_y_reg[11]' (FDC) to 'hdmi_sobel_display_m0i_3/u_rgb_to_gray/gray_x_reg[15]'
+INFO: [Synth 8-3886] merging instance 'hdmi_sobel_display_m0i_3/u_rgb_to_gray/gray_y_reg[12]' (FDC) to 'hdmi_sobel_display_m0i_3/u_rgb_to_gray/gray_x_reg[15]'
+INFO: [Synth 8-3886] merging instance 'hdmi_sobel_display_m0i_3/u_rgb_to_gray/gray_y_reg[13]' (FDC) to 'hdmi_sobel_display_m0i_3/u_rgb_to_gray/gray_x_reg[15]'
+INFO: [Synth 8-3886] merging instance 'hdmi_sobel_display_m0i_3/u_rgb_to_gray/gray_y_reg[14]' (FDC) to 'hdmi_sobel_display_m0i_3/u_rgb_to_gray/gray_x_reg[15]'
+INFO: [Synth 8-3886] merging instance 'hdmi_sobel_display_m0i_3/u_rgb_to_gray/gray_y_reg[15]' (FDC) to 'hdmi_sobel_display_m0i_3/u_rgb_to_gray/gray_x_reg[15]'
+INFO: [Synth 8-3886] merging instance 'hdmi_sobel_display_m0i_3/u_rgb_to_gray/gray_x_reg[7]' (FDC) to 'hdmi_sobel_display_m0i_3/u_rgb_to_gray/gray_x_reg[15]'
+INFO: [Synth 8-3886] merging instance 'hdmi_sobel_display_m0i_3/u_rgb_to_gray/gray_x_reg[8]' (FDC) to 'hdmi_sobel_display_m0i_3/u_rgb_to_gray/gray_x_reg[15]'
+INFO: [Synth 8-3886] merging instance 'hdmi_sobel_display_m0i_3/u_rgb_to_gray/gray_x_reg[9]' (FDC) to 'hdmi_sobel_display_m0i_3/u_rgb_to_gray/gray_x_reg[15]'
+INFO: [Synth 8-3886] merging instance 'hdmi_sobel_display_m0i_3/u_rgb_to_gray/gray_x_reg[10]' (FDC) to 'hdmi_sobel_display_m0i_3/u_rgb_to_gray/gray_x_reg[15]'
+INFO: [Synth 8-3886] merging instance 'hdmi_sobel_display_m0i_3/u_rgb_to_gray/gray_x_reg[11]' (FDC) to 'hdmi_sobel_display_m0i_3/u_rgb_to_gray/gray_x_reg[15]'
+INFO: [Synth 8-3886] merging instance 'hdmi_sobel_display_m0i_3/u_rgb_to_gray/gray_x_reg[12]' (FDC) to 'hdmi_sobel_display_m0i_3/u_rgb_to_gray/gray_x_reg[15]'
+INFO: [Synth 8-3886] merging instance 'hdmi_sobel_display_m0i_3/u_rgb_to_gray/gray_x_reg[13]' (FDC) to 'hdmi_sobel_display_m0i_3/u_rgb_to_gray/gray_x_reg[15]'
+INFO: [Synth 8-3886] merging instance 'hdmi_sobel_display_m0i_3/u_rgb_to_gray/gray_x_reg[14]' (FDC) to 'hdmi_sobel_display_m0i_3/u_rgb_to_gray/gray_x_reg[15]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (hdmi_sobel_display_m0i_3/\u_rgb_to_gray/gray_x_reg[15] )
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:29 ; elapsed = 00:00:33 . Memory (MB): peak = 860.324 ; gain = 556.070
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+ROM:
++-----------------+------------+---------------+----------------+
+|Module Name      | RTL Object | Depth x Width | Implemented As | 
++-----------------+------------+---------------+----------------+
+|image_rom_128x72 | data_reg   | 16384x24      | Block RAM      | 
++-----------------+------------+---------------+----------------+
+
+
+Block RAM: Preliminary Mapping  Report (see note below)
++--------------------+--------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name         | RTL Object   | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++--------------------+--------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|hdmi_sobel_display: | edge_mem_reg | 16 K x 8(READ_FIRST)   | W |   | 16 K x 8(WRITE_FIRST)  |   | R | Port A and B     | 0      | 4      | 
++--------------------+--------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+Note: The tale above is a preliminary report that shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. 
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+------------------------+------------+----------+
+|      |RTL Partition           |Replication |Instances |
++------+------------------------+------------+----------+
+|1     |sobel_core__GB0         |           1|      3356|
+|2     |sobel_core__GB1         |           1|      3599|
+|3     |sobel_core__GB2         |           1|      1448|
+|4     |hdmi_sobel_display__GC0 |           1|      1082|
+|5     |top__GC0                |           1|        13|
++------+------------------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5578] Moved timing constraint from pin 'rgb2dvi_m0/SerialClk' to pin 'video_clock_m0/bbstub_clk_out2/O'
+INFO: [Synth 8-5783] Moving clock source from hierarchical pin 'rgb2dvi_m0/PixelClk' to 'i_4/video_clk'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'video_clock_m0/clk_out1' to pin 'video_clock_m0/bbstub_clk_out1/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'video_clock_m0/clk_out2' to pin 'video_clock_m0/bbstub_clk_out2/O'
+WARNING: [Synth 8-565] redefining clock 'sys_clk'
+INFO: [Synth 8-5819] Moved 4 constraints on hierarchical pins to their respective driving/loading pins
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:34 ; elapsed = 00:00:38 . Memory (MB): peak = 930.711 ; gain = 626.457
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:40 ; elapsed = 00:00:45 . Memory (MB): peak = 1045.039 ; gain = 740.785
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Final Mapping  Report
++--------------------+--------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name         | RTL Object   | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++--------------------+--------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|hdmi_sobel_display: | edge_mem_reg | 16 K x 8(READ_FIRST)   | W |   | 16 K x 8(WRITE_FIRST)  |   | R | Port A and B     | 0      | 4      | 
++--------------------+--------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+----------------+------------+----------+
+|      |RTL Partition   |Replication |Instances |
++------+----------------+------------+----------+
+|1     |sobel_core__GB0 |           1|      3356|
+|2     |top__GC0        |           1|        13|
+|3     |top_GT0         |           1|      5945|
++------+----------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4480] The timing for the instance hdmi_sobel_display_m0/edge_mem_reg_0 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance hdmi_sobel_display_m0/edge_mem_reg_1 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance hdmi_sobel_display_m0/edge_mem_reg_2 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance hdmi_sobel_display_m0/edge_mem_reg_3 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance hdmi_sobel_display_m0/u_image_rom_128x72/data_reg_0 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance hdmi_sobel_display_m0/u_image_rom_128x72/data_reg_1 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance hdmi_sobel_display_m0/u_image_rom_128x72/data_reg_2 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance hdmi_sobel_display_m0/u_image_rom_128x72/data_reg_3 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance hdmi_sobel_display_m0/u_image_rom_128x72/data_reg_4 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance hdmi_sobel_display_m0/u_image_rom_128x72/data_reg_5 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance hdmi_sobel_display_m0/u_image_rom_128x72/data_reg_6 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance hdmi_sobel_display_m0/u_image_rom_128x72/data_reg_7 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance hdmi_sobel_display_m0/u_image_rom_128x72/data_reg_8 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance hdmi_sobel_display_m0/u_image_rom_128x72/data_reg_9 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance hdmi_sobel_display_m0/u_image_rom_128x72/data_reg_10 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance hdmi_sobel_display_m0/u_image_rom_128x72/data_reg_11 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:42 ; elapsed = 00:00:46 . Memory (MB): peak = 1045.039 ; gain = 740.785
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:43 ; elapsed = 00:00:48 . Memory (MB): peak = 1045.039 ; gain = 740.785
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:43 ; elapsed = 00:00:48 . Memory (MB): peak = 1045.039 ; gain = 740.785
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:43 ; elapsed = 00:00:48 . Memory (MB): peak = 1045.039 ; gain = 740.785
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:43 ; elapsed = 00:00:48 . Memory (MB): peak = 1045.039 ; gain = 740.785
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:43 ; elapsed = 00:00:48 . Memory (MB): peak = 1045.039 ; gain = 740.785
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:43 ; elapsed = 00:00:48 . Memory (MB): peak = 1045.039 ; gain = 740.785
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |video_clock   |         1|
+|2     |rgb2dvi_0     |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+------------+------+
+|      |Cell        |Count |
++------+------------+------+
+|1     |rgb2dvi_0   |     1|
+|2     |video_clock |     1|
+|3     |CARRY4      |    74|
+|4     |LUT1        |    53|
+|5     |LUT2        |   244|
+|6     |LUT3        |   173|
+|7     |LUT4        |   233|
+|8     |LUT5        |  1816|
+|9     |LUT6        |   966|
+|10    |MUXF7       |   264|
+|11    |MUXF8       |   108|
+|12    |RAMB36E1    |     1|
+|13    |RAMB36E1_1  |     1|
+|14    |RAMB36E1_10 |     1|
+|15    |RAMB36E1_11 |     1|
+|16    |RAMB36E1_12 |     4|
+|17    |RAMB36E1_2  |     1|
+|18    |RAMB36E1_3  |     1|
+|19    |RAMB36E1_4  |     1|
+|20    |RAMB36E1_5  |     1|
+|21    |RAMB36E1_6  |     1|
+|22    |RAMB36E1_7  |     1|
+|23    |RAMB36E1_8  |     1|
+|24    |RAMB36E1_9  |     1|
+|25    |FDCE        |  2333|
+|26    |OBUF        |     1|
++------+------------+------+
+
+Report Instance Areas: 
++------+------------------------+-------------------+------+
+|      |Instance                |Module             |Cells |
++------+------------------------+-------------------+------+
+|1     |top                     |                   |  6293|
+|2     |  hdmi_sobel_display_m0 |hdmi_sobel_display |  6242|
+|3     |    u_image_rom_128x72  |image_rom_128x72   |    78|
+|4     |    u_rgb_to_gray       |rgb_to_gray        |  2606|
+|5     |    u_sobel_core        |sobel_core         |  3291|
++------+------------------------+-------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:43 ; elapsed = 00:00:48 . Memory (MB): peak = 1045.039 ; gain = 740.785
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 2 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:35 ; elapsed = 00:00:43 . Memory (MB): peak = 1045.039 ; gain = 371.301
+Synthesis Optimization Complete : Time (s): cpu = 00:00:44 ; elapsed = 00:00:48 . Memory (MB): peak = 1045.039 ; gain = 740.785
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 462 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+89 Infos, 17 Warnings, 2 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:45 ; elapsed = 00:00:52 . Memory (MB): peak = 1045.039 ; gain = 752.289
+INFO: [Common 17-1381] The checkpoint 'D:/Github/FPGA-course/sobel/sobel_02_hdmi_sobel/sobel_02_hdmi_sobel.runs/synth_1/top.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file top_utilization_synth.rpt -pb top_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.029 . Memory (MB): peak = 1045.039 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Thu Jun  4 08:57:54 2026...

@@ -1,0 +1,107 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Wed Jun 17 21:53:28 2026
+| Host         : LAPTOP-CNP6NEDE running 64-bit major release  (build 9200)
+| Command      : report_drc -file top_drc_routed.rpt -pb top_drc_routed.pb -rpx top_drc_routed.rpx
+| Design       : top
+| Device       : xc7z020clg400-2
+| Speed File   : -2
+| Design State : Fully Routed
+---------------------------------------------------------------------------------------------------
+
+Report DRC
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+           Ruledeck: default
+             Max violations: <unlimited>
+             Violations found: 14
++-----------+----------+----------------------------+------------+
+| Rule      | Severity | Description                | Violations |
++-----------+----------+----------------------------+------------+
+| REQP-1839 | Warning  | RAMB36 async control check | 13         |
+| REQP-1840 | Warning  | RAMB18 async control check | 1          |
++-----------+----------+----------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+REQP-1839#1 Warning
+RAMB36 async control check  
+The RAMB36E1 hdmi_pl_top_i/hdmi_bram_sobel_display_m0/alg_sobel_mem_reg_0 has an input control pin hdmi_pl_top_i/hdmi_bram_sobel_display_m0/alg_sobel_mem_reg_0/ENARDEN (net: hdmi_pl_top_i/hdmi_bram_sobel_display_m0/alg_sobel_mem_reg_0_ENARDEN_cooolgate_en_sig_24) which is driven by a register (hdmi_pl_top_i/hdmi_bram_sobel_display_m0/u_alg_median_filter_3x3/de_in_r_reg[2]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#2 Warning
+RAMB36 async control check  
+The RAMB36E1 hdmi_pl_top_i/hdmi_bram_sobel_display_m0/gauss_mem_reg_0 has an input control pin hdmi_pl_top_i/hdmi_bram_sobel_display_m0/gauss_mem_reg_0/ENARDEN (net: hdmi_pl_top_i/hdmi_bram_sobel_display_m0/gauss_mem_reg_0_ENARDEN_cooolgate_en_sig_13) which is driven by a register (hdmi_pl_top_i/hdmi_bram_sobel_display_m0/u_alg_median_filter_3x3/de_in_r_reg[2]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#3 Warning
+RAMB36 async control check  
+The RAMB36E1 hdmi_pl_top_i/hdmi_bram_sobel_display_m0/gauss_mem_reg_1 has an input control pin hdmi_pl_top_i/hdmi_bram_sobel_display_m0/gauss_mem_reg_1/ENARDEN (net: hdmi_pl_top_i/hdmi_bram_sobel_display_m0/gauss_mem_reg_1_ENARDEN_cooolgate_en_sig_14) which is driven by a register (hdmi_pl_top_i/hdmi_bram_sobel_display_m0/u_alg_median_filter_3x3/de_in_r_reg[2]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#4 Warning
+RAMB36 async control check  
+The RAMB36E1 hdmi_pl_top_i/hdmi_bram_sobel_display_m0/gauss_mem_reg_2 has an input control pin hdmi_pl_top_i/hdmi_bram_sobel_display_m0/gauss_mem_reg_2/ENARDEN (net: hdmi_pl_top_i/hdmi_bram_sobel_display_m0/gauss_mem_reg_2_ENARDEN_cooolgate_en_sig_15) which is driven by a register (hdmi_pl_top_i/hdmi_bram_sobel_display_m0/u_alg_median_filter_3x3/de_in_r_reg[2]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#5 Warning
+RAMB36 async control check  
+The RAMB36E1 hdmi_pl_top_i/hdmi_bram_sobel_display_m0/gauss_mem_reg_3 has an input control pin hdmi_pl_top_i/hdmi_bram_sobel_display_m0/gauss_mem_reg_3/ENARDEN (net: hdmi_pl_top_i/hdmi_bram_sobel_display_m0/gauss_mem_reg_3_ENARDEN_cooolgate_en_sig_25) which is driven by a register (hdmi_pl_top_i/hdmi_bram_sobel_display_m0/u_alg_median_filter_3x3/de_in_r_reg[2]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#6 Warning
+RAMB36 async control check  
+The RAMB36E1 hdmi_pl_top_i/hdmi_bram_sobel_display_m0/gray_mem_reg_0 has an input control pin hdmi_pl_top_i/hdmi_bram_sobel_display_m0/gray_mem_reg_0/ENARDEN (net: hdmi_pl_top_i/hdmi_bram_sobel_display_m0/gray_mem_reg_0_ENARDEN_cooolgate_en_sig_16) which is driven by a register (hdmi_pl_top_i/hdmi_bram_sobel_display_m0/u_alg_RGB2YCbCr/de_in_d_reg[2]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#7 Warning
+RAMB36 async control check  
+The RAMB36E1 hdmi_pl_top_i/hdmi_bram_sobel_display_m0/gray_mem_reg_1 has an input control pin hdmi_pl_top_i/hdmi_bram_sobel_display_m0/gray_mem_reg_1/ENARDEN (net: hdmi_pl_top_i/hdmi_bram_sobel_display_m0/gray_mem_reg_1_ENARDEN_cooolgate_en_sig_17) which is driven by a register (hdmi_pl_top_i/hdmi_bram_sobel_display_m0/u_alg_RGB2YCbCr/de_in_d_reg[2]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#8 Warning
+RAMB36 async control check  
+The RAMB36E1 hdmi_pl_top_i/hdmi_bram_sobel_display_m0/gray_mem_reg_2 has an input control pin hdmi_pl_top_i/hdmi_bram_sobel_display_m0/gray_mem_reg_2/ENARDEN (net: hdmi_pl_top_i/hdmi_bram_sobel_display_m0/gray_mem_reg_2_ENARDEN_cooolgate_en_sig_18) which is driven by a register (hdmi_pl_top_i/hdmi_bram_sobel_display_m0/u_alg_RGB2YCbCr/de_in_d_reg[2]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#9 Warning
+RAMB36 async control check  
+The RAMB36E1 hdmi_pl_top_i/hdmi_bram_sobel_display_m0/gray_mem_reg_3 has an input control pin hdmi_pl_top_i/hdmi_bram_sobel_display_m0/gray_mem_reg_3/ENARDEN (net: hdmi_pl_top_i/hdmi_bram_sobel_display_m0/gray_mem_reg_3_ENARDEN_cooolgate_en_sig_19) which is driven by a register (hdmi_pl_top_i/hdmi_bram_sobel_display_m0/u_alg_RGB2YCbCr/de_in_d_reg[2]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#10 Warning
+RAMB36 async control check  
+The RAMB36E1 hdmi_pl_top_i/hdmi_bram_sobel_display_m0/median_mem_reg_0 has an input control pin hdmi_pl_top_i/hdmi_bram_sobel_display_m0/median_mem_reg_0/ENARDEN (net: hdmi_pl_top_i/hdmi_bram_sobel_display_m0/median_mem_reg_0_ENARDEN_cooolgate_en_sig_20) which is driven by a register (hdmi_pl_top_i/hdmi_bram_sobel_display_m0/u_alg_median_filter_3x3/de_in_r_reg[2]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#11 Warning
+RAMB36 async control check  
+The RAMB36E1 hdmi_pl_top_i/hdmi_bram_sobel_display_m0/median_mem_reg_1 has an input control pin hdmi_pl_top_i/hdmi_bram_sobel_display_m0/median_mem_reg_1/ENARDEN (net: hdmi_pl_top_i/hdmi_bram_sobel_display_m0/median_mem_reg_1_ENARDEN_cooolgate_en_sig_21) which is driven by a register (hdmi_pl_top_i/hdmi_bram_sobel_display_m0/u_alg_median_filter_3x3/de_in_r_reg[2]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#12 Warning
+RAMB36 async control check  
+The RAMB36E1 hdmi_pl_top_i/hdmi_bram_sobel_display_m0/median_mem_reg_2 has an input control pin hdmi_pl_top_i/hdmi_bram_sobel_display_m0/median_mem_reg_2/ENARDEN (net: hdmi_pl_top_i/hdmi_bram_sobel_display_m0/median_mem_reg_2_ENARDEN_cooolgate_en_sig_22) which is driven by a register (hdmi_pl_top_i/hdmi_bram_sobel_display_m0/u_alg_median_filter_3x3/de_in_r_reg[2]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#13 Warning
+RAMB36 async control check  
+The RAMB36E1 hdmi_pl_top_i/hdmi_bram_sobel_display_m0/median_mem_reg_3 has an input control pin hdmi_pl_top_i/hdmi_bram_sobel_display_m0/median_mem_reg_3/ENARDEN (net: hdmi_pl_top_i/hdmi_bram_sobel_display_m0/median_mem_reg_3_ENARDEN_cooolgate_en_sig_23) which is driven by a register (hdmi_pl_top_i/hdmi_bram_sobel_display_m0/u_alg_median_filter_3x3/de_in_r_reg[2]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1840#1 Warning
+RAMB18 async control check  
+The RAMB18E1 hdmi_pl_top_i/hdmi_bram_sobel_display_m0/bin_mem_reg has an input control pin hdmi_pl_top_i/hdmi_bram_sobel_display_m0/bin_mem_reg/ENARDEN (net: hdmi_pl_top_i/hdmi_bram_sobel_display_m0/bin_mem_reg_ENARDEN_cooolgate_en_sig_27) which is driven by a register (hdmi_pl_top_i/hdmi_bram_sobel_display_m0/u_alg_binarization/de_in_d_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+

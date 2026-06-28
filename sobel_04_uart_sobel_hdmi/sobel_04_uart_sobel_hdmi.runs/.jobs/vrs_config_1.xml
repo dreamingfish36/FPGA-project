@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="rgb2dvi_0_synth_1" LaunchDir="D:/Github/FPGA-course/sobel/sobel_04_uart_sobel_hdmi/sobel_04_uart_sobel_hdmi.runs/rgb2dvi_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="ps_uart_bram_hdmi_axi_smc_0_synth_1" LaunchDir="D:/Github/FPGA-course/sobel/sobel_04_uart_sobel_hdmi/sobel_04_uart_sobel_hdmi.runs/ps_uart_bram_hdmi_axi_smc_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="ps_uart_bram_hdmi_axi_bram_ctrl_0_0_synth_1" LaunchDir="D:/Github/FPGA-course/sobel/sobel_04_uart_sobel_hdmi/sobel_04_uart_sobel_hdmi.runs/ps_uart_bram_hdmi_axi_bram_ctrl_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="ps_uart_bram_hdmi_blk_mem_gen_0_0_synth_1" LaunchDir="D:/Github/FPGA-course/sobel/sobel_04_uart_sobel_hdmi/sobel_04_uart_sobel_hdmi.runs/ps_uart_bram_hdmi_blk_mem_gen_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="synth_1" LaunchDir="D:/Github/FPGA-course/sobel/sobel_04_uart_sobel_hdmi/sobel_04_uart_sobel_hdmi.runs/synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado">
+		<Parent Id="rgb2dvi_0_synth_1"/>
+		<Parent Id="ps_uart_bram_hdmi_axi_smc_0_synth_1"/>
+		<Parent Id="ps_uart_bram_hdmi_axi_bram_ctrl_0_0_synth_1"/>
+		<Parent Id="ps_uart_bram_hdmi_blk_mem_gen_0_0_synth_1"/>
+	</Run>
+</Runs>
+

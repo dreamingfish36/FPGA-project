@@ -1,0 +1,423 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Wed Jun 17 21:57:05 2026
+# Process ID: 25996
+# Current directory: C:/Users/ASUS/Desktop/sihaozhu/zynq7020-image-processing1/sobel_01_hdmi_pattern/sobel_01_hdmi_pattern.runs/synth_1
+# Command line: vivado.exe -log top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top.tcl
+# Log file: C:/Users/ASUS/Desktop/sihaozhu/zynq7020-image-processing1/sobel_01_hdmi_pattern/sobel_01_hdmi_pattern.runs/synth_1/top.vds
+# Journal file: C:/Users/ASUS/Desktop/sihaozhu/zynq7020-image-processing1/sobel_01_hdmi_pattern/sobel_01_hdmi_pattern.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source top.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository 'c:/Users/ASUS/Desktop/sihaozhu/zynq7020-image-processing1/hdmi_common/repo'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'F:/took/Xilinx/Vivado/2018.3/data/ip'.
+WARNING: [IP_Flow 19-4995] The host OS only allows 260 characters in a normal path. The IP cache path is more than 80 characters. If you experience issues with IP caching, please consider changing the IP cache to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. 
+Current IP cache path is c:/Users/ASUS/Desktop/sihaozhu/zynq7020-image-processing1/sobel_01_hdmi_pattern/sobel_01_hdmi_pattern.cache/ip 
+Command: synth_design -top top -part xc7z020clg400-2
+Starting synth_design
+INFO: [IP_Flow 19-2162] IP 'rgb2dvi_0' is locked:
+* IP definition 'rgb2dvi (1.3)' for IP 'rgb2dvi_0' (customized with software release 2017.4) was not found in the IP Catalog.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+INFO: [IP_Flow 19-2162] IP 'video_clock' is locked:
+* IP definition 'Clocking Wizard (5.4)' for IP 'video_clock' (customized with software release 2017.4) has a newer major version in the IP Catalog.
+* The IP Data in the repository is incompatible with the current instance (despite having identical Version and Revision). You will need to upgrade the IP before viewing the customization and generating outputs.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 8664 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 407.387 ; gain = 99.797
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'top' [C:/Users/ASUS/Desktop/sihaozhu/zynq7020-image-processing1/sobel_01_hdmi_pattern/sobel_01_hdmi_pattern.srcs/sources_1/new/top.v:1]
+INFO: [Synth 8-6157] synthesizing module 'hdmi_image_display' [C:/Users/ASUS/Desktop/sihaozhu/zynq7020-image-processing1/sobel_01_hdmi_pattern/sobel_01_hdmi_pattern.srcs/sources_1/new/hdmi_image_display.v:1]
+	Parameter H_ACTIVE bound to: 16'b0000010100000000 
+	Parameter H_FP bound to: 16'b0000000001101110 
+	Parameter H_SYNC bound to: 16'b0000000000101000 
+	Parameter H_BP bound to: 16'b0000000011011100 
+	Parameter V_ACTIVE bound to: 16'b0000001011010000 
+	Parameter V_FP bound to: 16'b0000000000000101 
+	Parameter V_SYNC bound to: 16'b0000000000000101 
+	Parameter V_BP bound to: 16'b0000000000010100 
+	Parameter H_TOTAL bound to: 16'b0000011001110010 
+	Parameter V_TOTAL bound to: 16'b0000001011101110 
+	Parameter H_START bound to: 16'b0000000101110010 
+	Parameter V_START bound to: 16'b0000000000011110 
+	Parameter IMG_WIDTH bound to: 128 - type: integer 
+	Parameter IMG_HEIGHT bound to: 72 - type: integer 
+	Parameter IMG_SCALE_X bound to: 4 - type: integer 
+	Parameter IMG_SCALE_Y bound to: 4 - type: integer 
+	Parameter IMG_SHOW_WIDTH bound to: 12'b001000000000 
+	Parameter IMG_SHOW_HEIGHT bound to: 12'b000100100000 
+	Parameter IMG_LEFT bound to: 12'b000110000000 
+	Parameter IMG_TOP bound to: 12'b000011011000 
+	Parameter BG_R bound to: 8'b00010000 
+	Parameter BG_G bound to: 8'b00110000 
+	Parameter BG_B bound to: 8'b10000000 
+INFO: [Synth 8-6157] synthesizing module 'image_rom_128x72' [C:/Users/ASUS/Desktop/sihaozhu/zynq7020-image-processing1/sobel_01_hdmi_pattern/sobel_01_hdmi_pattern.srcs/sources_1/new/hdmi_image_display.v:160]
+INFO: [Synth 8-5534] Detected attribute (* ram_style = "block" *) [C:/Users/ASUS/Desktop/sihaozhu/zynq7020-image-processing1/sobel_01_hdmi_pattern/sobel_01_hdmi_pattern.srcs/sources_1/new/hdmi_image_display.v:166]
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "block" *) [C:/Users/ASUS/Desktop/sihaozhu/zynq7020-image-processing1/sobel_01_hdmi_pattern/sobel_01_hdmi_pattern.srcs/sources_1/new/hdmi_image_display.v:166]
+INFO: [Synth 8-6155] done synthesizing module 'image_rom_128x72' (1#1) [C:/Users/ASUS/Desktop/sihaozhu/zynq7020-image-processing1/sobel_01_hdmi_pattern/sobel_01_hdmi_pattern.srcs/sources_1/new/hdmi_image_display.v:160]
+INFO: [Synth 8-6155] done synthesizing module 'hdmi_image_display' (2#1) [C:/Users/ASUS/Desktop/sihaozhu/zynq7020-image-processing1/sobel_01_hdmi_pattern/sobel_01_hdmi_pattern.srcs/sources_1/new/hdmi_image_display.v:1]
+INFO: [Synth 8-6157] synthesizing module 'video_clock' [C:/Users/ASUS/Desktop/sihaozhu/zynq7020-image-processing1/sobel_01_hdmi_pattern/sobel_01_hdmi_pattern.runs/synth_1/.Xil/Vivado-25996-LAPTOP-CNP6NEDE/realtime/video_clock_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'video_clock' (3#1) [C:/Users/ASUS/Desktop/sihaozhu/zynq7020-image-processing1/sobel_01_hdmi_pattern/sobel_01_hdmi_pattern.runs/synth_1/.Xil/Vivado-25996-LAPTOP-CNP6NEDE/realtime/video_clock_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'rgb2dvi_0' [C:/Users/ASUS/Desktop/sihaozhu/zynq7020-image-processing1/sobel_01_hdmi_pattern/sobel_01_hdmi_pattern.runs/synth_1/.Xil/Vivado-25996-LAPTOP-CNP6NEDE/realtime/rgb2dvi_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'rgb2dvi_0' (4#1) [C:/Users/ASUS/Desktop/sihaozhu/zynq7020-image-processing1/sobel_01_hdmi_pattern/sobel_01_hdmi_pattern.runs/synth_1/.Xil/Vivado-25996-LAPTOP-CNP6NEDE/realtime/rgb2dvi_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'top' (5#1) [C:/Users/ASUS/Desktop/sihaozhu/zynq7020-image-processing1/sobel_01_hdmi_pattern/sobel_01_hdmi_pattern.srcs/sources_1/new/top.v:1]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 463.738 ; gain = 156.148
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 463.738 ; gain = 156.148
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 463.738 ; gain = 156.148
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z020clg400-2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/ASUS/Desktop/sihaozhu/zynq7020-image-processing1/sobel_01_hdmi_pattern/sobel_01_hdmi_pattern.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0/rgb2dvi_0_in_context.xdc] for cell 'rgb2dvi_m0'
+Finished Parsing XDC File [c:/Users/ASUS/Desktop/sihaozhu/zynq7020-image-processing1/sobel_01_hdmi_pattern/sobel_01_hdmi_pattern.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0/rgb2dvi_0_in_context.xdc] for cell 'rgb2dvi_m0'
+Parsing XDC File [c:/Users/ASUS/Desktop/sihaozhu/zynq7020-image-processing1/sobel_01_hdmi_pattern/sobel_01_hdmi_pattern.srcs/sources_1/ip/video_clock/video_clock/video_clock_in_context.xdc] for cell 'video_clock_m0'
+Finished Parsing XDC File [c:/Users/ASUS/Desktop/sihaozhu/zynq7020-image-processing1/sobel_01_hdmi_pattern/sobel_01_hdmi_pattern.srcs/sources_1/ip/video_clock/video_clock/video_clock_in_context.xdc] for cell 'video_clock_m0'
+Parsing XDC File [C:/Users/ASUS/Desktop/sihaozhu/zynq7020-image-processing1/sobel_01_hdmi_pattern/sobel_01_hdmi_pattern.srcs/constrs_1/new/hdmi_out_test.xdc]
+WARNING: [Constraints 18-619] A clock with name 'sys_clk' already exists, overwriting the previous clock with the same name. [C:/Users/ASUS/Desktop/sihaozhu/zynq7020-image-processing1/sobel_01_hdmi_pattern/sobel_01_hdmi_pattern.srcs/constrs_1/new/hdmi_out_test.xdc:3]
+Finished Parsing XDC File [C:/Users/ASUS/Desktop/sihaozhu/zynq7020-image-processing1/sobel_01_hdmi_pattern/sobel_01_hdmi_pattern.srcs/constrs_1/new/hdmi_out_test.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/ASUS/Desktop/sihaozhu/zynq7020-image-processing1/sobel_01_hdmi_pattern/sobel_01_hdmi_pattern.srcs/constrs_1/new/hdmi_out_test.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 830.934 ; gain = 0.000
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 830.934 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 830.934 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 830.934 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:14 ; elapsed = 00:00:17 . Memory (MB): peak = 830.934 ; gain = 523.344
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-2
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:14 ; elapsed = 00:00:17 . Memory (MB): peak = 830.934 ; gain = 523.344
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for TMDS_clk_n. (constraint file  c:/Users/ASUS/Desktop/sihaozhu/zynq7020-image-processing1/sobel_01_hdmi_pattern/sobel_01_hdmi_pattern.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0/rgb2dvi_0_in_context.xdc, line 2).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for TMDS_clk_n. (constraint file  c:/Users/ASUS/Desktop/sihaozhu/zynq7020-image-processing1/sobel_01_hdmi_pattern/sobel_01_hdmi_pattern.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0/rgb2dvi_0_in_context.xdc, line 3).
+Applied set_property IO_BUFFER_TYPE = NONE for TMDS_clk_p. (constraint file  c:/Users/ASUS/Desktop/sihaozhu/zynq7020-image-processing1/sobel_01_hdmi_pattern/sobel_01_hdmi_pattern.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0/rgb2dvi_0_in_context.xdc, line 4).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for TMDS_clk_p. (constraint file  c:/Users/ASUS/Desktop/sihaozhu/zynq7020-image-processing1/sobel_01_hdmi_pattern/sobel_01_hdmi_pattern.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0/rgb2dvi_0_in_context.xdc, line 5).
+Applied set_property IO_BUFFER_TYPE = NONE for TMDS_data_n[0]. (constraint file  c:/Users/ASUS/Desktop/sihaozhu/zynq7020-image-processing1/sobel_01_hdmi_pattern/sobel_01_hdmi_pattern.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0/rgb2dvi_0_in_context.xdc, line 6).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for TMDS_data_n[0]. (constraint file  c:/Users/ASUS/Desktop/sihaozhu/zynq7020-image-processing1/sobel_01_hdmi_pattern/sobel_01_hdmi_pattern.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0/rgb2dvi_0_in_context.xdc, line 7).
+Applied set_property IO_BUFFER_TYPE = NONE for TMDS_data_n[1]. (constraint file  c:/Users/ASUS/Desktop/sihaozhu/zynq7020-image-processing1/sobel_01_hdmi_pattern/sobel_01_hdmi_pattern.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0/rgb2dvi_0_in_context.xdc, line 8).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for TMDS_data_n[1]. (constraint file  c:/Users/ASUS/Desktop/sihaozhu/zynq7020-image-processing1/sobel_01_hdmi_pattern/sobel_01_hdmi_pattern.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0/rgb2dvi_0_in_context.xdc, line 9).
+Applied set_property IO_BUFFER_TYPE = NONE for TMDS_data_n[2]. (constraint file  c:/Users/ASUS/Desktop/sihaozhu/zynq7020-image-processing1/sobel_01_hdmi_pattern/sobel_01_hdmi_pattern.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0/rgb2dvi_0_in_context.xdc, line 10).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for TMDS_data_n[2]. (constraint file  c:/Users/ASUS/Desktop/sihaozhu/zynq7020-image-processing1/sobel_01_hdmi_pattern/sobel_01_hdmi_pattern.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0/rgb2dvi_0_in_context.xdc, line 11).
+Applied set_property IO_BUFFER_TYPE = NONE for TMDS_data_p[0]. (constraint file  c:/Users/ASUS/Desktop/sihaozhu/zynq7020-image-processing1/sobel_01_hdmi_pattern/sobel_01_hdmi_pattern.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0/rgb2dvi_0_in_context.xdc, line 12).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for TMDS_data_p[0]. (constraint file  c:/Users/ASUS/Desktop/sihaozhu/zynq7020-image-processing1/sobel_01_hdmi_pattern/sobel_01_hdmi_pattern.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0/rgb2dvi_0_in_context.xdc, line 13).
+Applied set_property IO_BUFFER_TYPE = NONE for TMDS_data_p[1]. (constraint file  c:/Users/ASUS/Desktop/sihaozhu/zynq7020-image-processing1/sobel_01_hdmi_pattern/sobel_01_hdmi_pattern.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0/rgb2dvi_0_in_context.xdc, line 14).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for TMDS_data_p[1]. (constraint file  c:/Users/ASUS/Desktop/sihaozhu/zynq7020-image-processing1/sobel_01_hdmi_pattern/sobel_01_hdmi_pattern.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0/rgb2dvi_0_in_context.xdc, line 15).
+Applied set_property IO_BUFFER_TYPE = NONE for TMDS_data_p[2]. (constraint file  c:/Users/ASUS/Desktop/sihaozhu/zynq7020-image-processing1/sobel_01_hdmi_pattern/sobel_01_hdmi_pattern.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0/rgb2dvi_0_in_context.xdc, line 16).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for TMDS_data_p[2]. (constraint file  c:/Users/ASUS/Desktop/sihaozhu/zynq7020-image-processing1/sobel_01_hdmi_pattern/sobel_01_hdmi_pattern.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0/rgb2dvi_0_in_context.xdc, line 17).
+Applied set_property IO_BUFFER_TYPE = NONE for sys_clk. (constraint file  c:/Users/ASUS/Desktop/sihaozhu/zynq7020-image-processing1/sobel_01_hdmi_pattern/sobel_01_hdmi_pattern.srcs/sources_1/ip/video_clock/video_clock/video_clock_in_context.xdc, line 4).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for sys_clk. (constraint file  c:/Users/ASUS/Desktop/sihaozhu/zynq7020-image-processing1/sobel_01_hdmi_pattern/sobel_01_hdmi_pattern.srcs/sources_1/ip/video_clock/video_clock/video_clock_in_context.xdc, line 5).
+Applied set_property DONT_TOUCH = true for rgb2dvi_m0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for video_clock_m0. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:17 . Memory (MB): peak = 830.934 ; gain = 523.344
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5547] Trying to map ROM "image_mem" into Block RAM due to explicit "ram_style" or "rom_style" specification
+INFO: [Synth 8-5546] ROM "v_cnt" won't be mapped to RAM because it is too sparse
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:15 ; elapsed = 00:00:18 . Memory (MB): peak = 830.934 ; gain = 523.344
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 2     
+	   2 Input     12 Bit       Adders := 4     
++---Registers : 
+	               24 Bit    Registers := 1     
+	               14 Bit    Registers := 1     
+	               12 Bit    Registers := 2     
+	                1 Bit    Registers := 8     
++---ROMs : 
+	                              ROMs := 1     
++---Muxes : 
+	   2 Input     12 Bit        Muxes := 2     
+	   2 Input      8 Bit        Muxes := 6     
+	   2 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module image_rom_128x72 
+Detailed RTL Component Info : 
++---Registers : 
+	               24 Bit    Registers := 1     
++---ROMs : 
+	                              ROMs := 1     
+Module hdmi_image_display 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 2     
+	   2 Input     12 Bit       Adders := 4     
++---Registers : 
+	               14 Bit    Registers := 1     
+	               12 Bit    Registers := 2     
+	                1 Bit    Registers := 8     
++---Muxes : 
+	   2 Input     12 Bit        Muxes := 2     
+	   2 Input      8 Bit        Muxes := 6     
+	   2 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5546] ROM "hdmi_image_display_m0/v_cnt" won't be mapped to RAM because it is too sparse
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:19 . Memory (MB): peak = 830.934 ; gain = 523.344
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6837] The timing for the instance hdmi_image_display_m0i_0/hdmi_image_display_m0/u_image_rom_128x72/data_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance hdmi_image_display_m0i_0/hdmi_image_display_m0/u_image_rom_128x72/data_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance hdmi_image_display_m0i_0/hdmi_image_display_m0/u_image_rom_128x72/data_reg_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance hdmi_image_display_m0i_0/hdmi_image_display_m0/u_image_rom_128x72/data_reg_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance hdmi_image_display_m0i_0/hdmi_image_display_m0/u_image_rom_128x72/data_reg_4 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance hdmi_image_display_m0i_0/hdmi_image_display_m0/u_image_rom_128x72/data_reg_5 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance hdmi_image_display_m0i_0/hdmi_image_display_m0/u_image_rom_128x72/data_reg_6 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance hdmi_image_display_m0i_0/hdmi_image_display_m0/u_image_rom_128x72/data_reg_7 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance hdmi_image_display_m0i_0/hdmi_image_display_m0/u_image_rom_128x72/data_reg_8 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance hdmi_image_display_m0i_0/hdmi_image_display_m0/u_image_rom_128x72/data_reg_9 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance hdmi_image_display_m0i_0/hdmi_image_display_m0/u_image_rom_128x72/data_reg_10 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance hdmi_image_display_m0i_0/hdmi_image_display_m0/u_image_rom_128x72/data_reg_11 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5578] Moved timing constraint from pin 'rgb2dvi_m0/SerialClk' to pin 'video_clock_m0/bbstub_clk_out2/O'
+INFO: [Synth 8-5783] Moving clock source from hierarchical pin 'rgb2dvi_m0/PixelClk' to 'hdmi_image_display_m0/rom_addr_reg[13]/C'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'video_clock_m0/clk_out1' to pin 'video_clock_m0/bbstub_clk_out1/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'video_clock_m0/clk_out2' to pin 'video_clock_m0/bbstub_clk_out2/O'
+WARNING: [Synth 8-565] redefining clock 'sys_clk'
+INFO: [Synth 8-5819] Moved 4 constraints on hierarchical pins to their respective driving/loading pins
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:27 ; elapsed = 00:00:31 . Memory (MB): peak = 835.840 ; gain = 528.250
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:27 ; elapsed = 00:00:31 . Memory (MB): peak = 858.113 ; gain = 550.523
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6837] The timing for the instance hdmi_image_display_m0/u_image_rom_128x72/data_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance hdmi_image_display_m0/u_image_rom_128x72/data_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance hdmi_image_display_m0/u_image_rom_128x72/data_reg_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance hdmi_image_display_m0/u_image_rom_128x72/data_reg_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance hdmi_image_display_m0/u_image_rom_128x72/data_reg_4 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance hdmi_image_display_m0/u_image_rom_128x72/data_reg_5 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance hdmi_image_display_m0/u_image_rom_128x72/data_reg_6 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance hdmi_image_display_m0/u_image_rom_128x72/data_reg_7 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance hdmi_image_display_m0/u_image_rom_128x72/data_reg_8 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance hdmi_image_display_m0/u_image_rom_128x72/data_reg_9 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance hdmi_image_display_m0/u_image_rom_128x72/data_reg_10 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance hdmi_image_display_m0/u_image_rom_128x72/data_reg_11 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:27 ; elapsed = 00:00:32 . Memory (MB): peak = 859.547 ; gain = 551.957
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:28 ; elapsed = 00:00:33 . Memory (MB): peak = 859.547 ; gain = 551.957
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:28 ; elapsed = 00:00:33 . Memory (MB): peak = 859.547 ; gain = 551.957
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:28 ; elapsed = 00:00:33 . Memory (MB): peak = 859.547 ; gain = 551.957
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:28 ; elapsed = 00:00:33 . Memory (MB): peak = 859.547 ; gain = 551.957
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:28 ; elapsed = 00:00:33 . Memory (MB): peak = 859.547 ; gain = 551.957
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:28 ; elapsed = 00:00:33 . Memory (MB): peak = 859.547 ; gain = 551.957
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |video_clock   |         1|
+|2     |rgb2dvi_0     |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+------------+------+
+|      |Cell        |Count |
++------+------------+------+
+|1     |rgb2dvi_0   |     1|
+|2     |video_clock |     1|
+|3     |CARRY4      |    12|
+|4     |LUT1        |    18|
+|5     |LUT2        |     4|
+|6     |LUT3        |    29|
+|7     |LUT4        |     4|
+|8     |LUT5        |     8|
+|9     |LUT6        |    14|
+|10    |RAMB36E1    |     1|
+|11    |RAMB36E1_1  |     1|
+|12    |RAMB36E1_10 |     1|
+|13    |RAMB36E1_11 |     1|
+|14    |RAMB36E1_2  |     1|
+|15    |RAMB36E1_3  |     1|
+|16    |RAMB36E1_4  |     1|
+|17    |RAMB36E1_5  |     1|
+|18    |RAMB36E1_6  |     1|
+|19    |RAMB36E1_7  |     1|
+|20    |RAMB36E1_8  |     1|
+|21    |RAMB36E1_9  |     1|
+|22    |FDRE        |    46|
+|23    |OBUF        |     1|
++------+------------+------+
+
+Report Instance Areas: 
++------+------------------------+-------------------+------+
+|      |Instance                |Module             |Cells |
++------+------------------------+-------------------+------+
+|1     |top                     |                   |   160|
+|2     |  hdmi_image_display_m0 |hdmi_image_display |   147|
+|3     |    u_image_rom_128x72  |image_rom_128x72   |    36|
++------+------------------------+-------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:28 ; elapsed = 00:00:33 . Memory (MB): peak = 859.547 ; gain = 551.957
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:17 ; elapsed = 00:00:24 . Memory (MB): peak = 859.547 ; gain = 184.762
+Synthesis Optimization Complete : Time (s): cpu = 00:00:28 ; elapsed = 00:00:33 . Memory (MB): peak = 859.547 ; gain = 551.957
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 24 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 859.547 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+60 Infos, 4 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:30 ; elapsed = 00:00:36 . Memory (MB): peak = 859.547 ; gain = 562.141
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 859.547 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/ASUS/Desktop/sihaozhu/zynq7020-image-processing1/sobel_01_hdmi_pattern/sobel_01_hdmi_pattern.runs/synth_1/top.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file top_utilization_synth.rpt -pb top_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed Jun 17 21:57:44 2026...
